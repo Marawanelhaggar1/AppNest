@@ -9,11 +9,16 @@
 }
 
 .body-trimmed {
-  width: calc(100% - 22rem);
-  margin-right: 20rem;
+  width: calc(100% - 17rem);
+  margin-right: 17rem;
 }
 
 .body-md-screen {
   width: calc(100% - 7rem);
   margin-right: 7rem;
+}
+
+.header {
+  padding: 1rem 0;
+  background-color: var(--main-color);
 }

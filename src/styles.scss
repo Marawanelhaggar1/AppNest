@@ -1,6 +1,12 @@
 /* Importing Bootstrap SCSS file. */
 @import "bootstrap/scss/bootstrap";
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("/assets/fonts/din-next-lt-arabic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --main-color: #ffd4ec;
@@ -13,5 +19,16 @@ body {
 }
 body {
   margin: 0;
-  // font-family: "DIN Next LT Arabic";
+  font-family: "Cairo", sans-serif !important;
+  // font-family: "DIN Next LT Arabic Regular", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cairo", sans-serif !important;
+  // font-family: "DIN Next LT Arabic Regular", sans-serif !important;
 }

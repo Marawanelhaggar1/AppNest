@@ -1,43 +1,63 @@
-<nav #navbar class="navbar active">
+<nav>
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a
-        href="#"
-        onClick="return false;"
-        class="navbar-toggle collapsed"
-        (click)="isNavbarCollapsed = !isNavbarCollapsed"
-        aria-expanded="false"
-      ></a>
-      <a
-        href="#"
-        onClick="return false;"
-        class="bars"
-        (click)="mobileMenuSidebarOpen($event, 'overlay-open')"
-      ></a>
-      <a class="navbar-brand" routerLink="/">
-        <img width="30px" src="assets/images/Logo.png" alt="" />
+    <div class="full-nav">
+      <div class="title"><h1>المواد</h1></div>
+      <div class="nav-details">
+        <div class="all-icons">
+          <div class="icon">
+            <img src="assets/icons/calendar-2.svg" alt="" />
+          </div>
+          <div class="icon">
+            <img src="assets/icons/message-question.svg" alt="" />
+          </div>
+          <div class="icon">
+            <img src="assets/icons/notification.svg" alt="" />
+          </div>
+        </div>
+        <div class="user">
+          <div class="image">
+            <img src="assets/images/Memoji.png" alt="" />
+          </div>
+          <div class="details">
+            <h2 class="name">أحمد سليمان</h2>
+            <p class="role">معلم</p>
+          </div>
+          <img class="arrow" src="assets/icons/arrow-down.svg" alt="" />
 
-        <span class="logo-name">كتابك </span>
-      </a>
-    </div>
-    <div
-      class="collapse navbar-collapse"
-      [ngClass]="isNavbarCollapsed ? '' : 'show'"
-    >
-      <ul class="float-start collapse-menu-icon">
-        <li>
-          <button
-            mat-button
-            (click)="callSidemenuCollapse()"
-            class="sidemenu-collapse nav-notification-icons"
-          >
-            <i class="material-icons-outlined icon-color" matIconSuffix>
-              menu
-            </i>
-          </button>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right"></ul>
+          <!-- <div class="dropdown">
+            <div class="user-details">
+              <div class="image">
+                <img src="assets/images/Memoji.png" alt="" />
+              </div>
+              <div class="detail">
+                <p class="detail-name">احمد سليمان</p>
+                <p class="online">متصل</p>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="account">
+              <a>
+                <div class="button-name">
+                  <img src="assets/icons/profile.svg" alt="" />
+                  <p>حسابي</p>
+                </div>
+                <i class="fa fa-chevron-right"></i>
+              </a>
+            </div>
+            <hr />
+            <div class="account">
+              <a (click)="logout()">
+                <div class="button-name">
+                  <img src="assets/icons/logout.svg" alt="" />
+                  <p>تسجيل الخروج</p>
+                </div>
+              </a>
+            </div>
+          </div> -->
+        </div>
+      </div>
     </div>
   </div>
 </nav>
