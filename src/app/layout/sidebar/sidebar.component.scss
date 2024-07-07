@@ -1,0 +1,121 @@
+.sidenav {
+  background-color: var(--main-color);
+  transition: all 0.5s ease;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-y: scroll;
+  width: 6rem;
+  height: 100%;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    padding: 0.938rem 0;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    .logo {
+      text-align: center;
+      padding: 0.313rem;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+    }
+
+    .logo-title {
+      font-size: 26.58px;
+      font-weight: 700;
+      line-height: 26.58px;
+      letter-spacing: 1.2083332538604736px;
+      text-align: left;
+      color: var(--title-color);
+    }
+
+    .btn-close {
+      margin: auto;
+      text-align: right;
+      cursor: pointer;
+      width: 2rem;
+      height: 2rem;
+      border: none;
+      background-color: transparent;
+
+      i {
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+  }
+}
+.sidenav-collapsed {
+  width: 17rem;
+}
+
+.sidenav-nav {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  cursor: pointer;
+
+  .sidenav-nav-item {
+    width: 100%;
+    margin-bottom: 0.625rem;
+    .sidenav-nav-link {
+      display: flex;
+      align-items: center;
+      border-radius: 0.625rem;
+      padding: 0 0.925rem;
+      height: 3rem;
+      color: #09243499;
+      gap: 1rem;
+      text-decoration: none;
+      transition: all 0.5s ease;
+
+      .sidenav-nav-icon {
+        text-align: center;
+        font-size: 18px;
+        width: 2rem;
+        min-width: 2rem;
+      }
+
+      .sidenav-link-text {
+        margin-left: 1.5rem;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: 0.5px;
+        color: #09243499;
+      }
+
+      &:hover {
+        color: var(--title-color);
+        background-color: #fff;
+        transition: color 0.5s ease;
+
+        .sidenav-link-text {
+          color: var(--title-color);
+          transition: color 0.5s ease;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  background-color: #fff;
+  color: var(--title-color);
+
+  i,
+  .sidenav-link-text {
+    color: var(--title-color) !important;
+  }
+}

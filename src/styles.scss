@@ -1,1 +1,17 @@
+/* Importing Bootstrap SCSS file. */
+@import "bootstrap/scss/bootstrap";
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --main-color: #ffd4ec;
+  --title-color: #ff3ca6;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  // font-family: "DIN Next LT Arabic";
+}
