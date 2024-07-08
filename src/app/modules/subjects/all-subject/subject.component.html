@@ -1,1 +1,33 @@
-<app-subjects></app-subjects>
+<div class="buttons">
+  <button
+    (click)="displaySubject()"
+    [ngClass]="{
+      'button-link': true,
+      active: subject
+    }"
+    type="button"
+  >
+    <i class="fa-regular fa-file-lines"></i>
+    <span>المواد الدراسية</span>
+  </button>
+  <button
+    [ngClass]="{
+      'button-link': true,
+      active: !subject
+    }"
+    (click)="displayQuestions()"
+    class="button-link"
+    type="button"
+  >
+    <i class="fa-regular fa-file-lines"></i>
+    <span>كل التمارين</span>
+  </button>
+</div>
+
+<div *ngIf="subject">
+  <app-subjects></app-subjects>
+</div>
+
+<div *ngIf="!subject">
+  <app-questions></app-questions>
+</div>

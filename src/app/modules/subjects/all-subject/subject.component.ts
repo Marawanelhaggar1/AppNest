@@ -5,4 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './subject.component.html',
   styleUrls: ['./subject.component.scss'],
 })
-export class AllSubjectComponent {}
+export class AllSubjectComponent {
+  subject: boolean = true;
+  displaySubject() {
+    this.subject = true;
+  }
+
+  displayQuestions() {
+    this.subject = false;
+  }
+}

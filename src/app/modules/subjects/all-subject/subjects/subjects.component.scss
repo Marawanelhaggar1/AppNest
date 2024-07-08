@@ -89,3 +89,12 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .all-subjects {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(calc(100% - 18px), 1fr)
+    ) !important;
+  }
+}
