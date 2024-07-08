@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMatModule } from './shared/angular-mat/angular-mat.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BodyComponent } from './body/body.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { BodyComponent } from './body/body.component';
     BrowserAnimationsModule,
     AngularMatModule,
     NgbModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

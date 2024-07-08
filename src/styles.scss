@@ -11,6 +11,7 @@
 :root {
   --main-color: #ffd4ec;
   --title-color: #ff3ca6;
+  --main-color2: #092433;
 }
 
 html,
@@ -31,4 +32,9 @@ h5,
 h6 {
   font-family: "Cairo", sans-serif !important;
   // font-family: "DIN Next LT Arabic Regular", sans-serif !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

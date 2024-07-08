@@ -1,0 +1,8 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-all-subject',
+  templateUrl: './subject.component.html',
+  styleUrls: ['./subject.component.scss'],
+})
+export class AllSubjectComponent {}
