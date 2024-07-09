@@ -1,0 +1,17 @@
+.question-type-list {
+  background-color: var(--main-color);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.question-type-list div[cdkDrag] {
+  padding: 6px;
+  border-radius: 4px;
+  background-color: white;
+  color: var(--title-color);
+  margin: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20.58px;
+  cursor: grab;
+}

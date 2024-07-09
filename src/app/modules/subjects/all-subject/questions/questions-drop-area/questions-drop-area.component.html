@@ -1,0 +1,19 @@
+<div
+  cdkDropList
+  id="dropArea"
+  [cdkDropListData]="questions"
+  (cdkDropListDropped)="drop($event)"
+  class="drop-area"
+>
+  <div class="label" *ngIf="questions.length == 0">
+    قم بسحب و ادراج نوع السؤال هنا ..
+  </div>
+  <div *ngFor="let question of questions" class="question">
+    <ng-container [ngSwitch]="question">
+      <div *ngSwitchCase="'اسحب نوع السؤال'">اسحب نوع السؤال</div>
+      <div *ngSwitchCase="'اختيار من متعدد'">اختيار من متعدد</div>
+      <div *ngSwitchCase="'اختيار فردي'">اختيار فردي</div>
+      <div *ngSwitchCase="'نص'">نص</div>
+    </ng-container>
+  </div>
+</div>

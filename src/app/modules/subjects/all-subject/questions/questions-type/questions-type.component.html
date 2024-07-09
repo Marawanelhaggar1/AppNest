@@ -1,0 +1,10 @@
+<div
+  cdkDropList
+  [cdkDropListData]="questionTypes"
+  cdkDropListConnectedTo="dropArea"
+  class="question-type-list"
+>
+  <div *ngFor="let questionType of questionTypes" class="" cdkDrag>
+    {{ questionType }}
+  </div>
+</div>
