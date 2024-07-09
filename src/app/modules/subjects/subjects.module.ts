@@ -9,10 +9,10 @@ import { QuestionsTypeComponent } from './all-subject/questions/questions-type/q
 import { QuestionsDropAreaComponent } from './all-subject/questions/questions-drop-area/questions-drop-area.component';
 import { AngularMatModule } from 'src/app/shared/angular-mat/angular-mat.module';
 import { DragDropModule } from '@angular/cdk/drag-drop';
-import { QuestionsContainerComponent } from './all-subject/questions/questions-container/questions-container.component';
-import { MultipleQuestionsComponent } from './all-subject/questions/questionsContainer/multiple-questions/multiple-questions.component';
-import { SingleChoiceQuestionsComponent } from './all-subject/questions/questionsContainer/single-choice-questions/single-choice-questions.component';
-import { TextQuestionsComponent } from './all-subject/questions/questionsContainer/text-questions/text-questions.component';
+
+import { MultipleQuestionsComponent } from './all-subject/questions/questions-container/multiple-questions/multiple-questions.component';
+import { SingleChoiceQuestionsComponent } from './all-subject/questions/questions-container/single-choice-questions/single-choice-questions.component';
+import { TextQuestionsComponent } from './all-subject/questions/questions-container/text-questions/text-questions.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,6 @@ import { TextQuestionsComponent } from './all-subject/questions/questionsContain
     SubjectsComponent,
     QuestionsTypeComponent,
     QuestionsDropAreaComponent,
-    QuestionsContainerComponent,
     MultipleQuestionsComponent,
     SingleChoiceQuestionsComponent,
     TextQuestionsComponent,
