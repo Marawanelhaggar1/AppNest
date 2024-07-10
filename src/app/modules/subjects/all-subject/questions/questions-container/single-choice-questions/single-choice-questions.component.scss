@@ -10,4 +10,64 @@
     line-height: 24.18px;
     color: #092434;
   }
+
+  .choice-difficulty {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    .add-choice {
+      button {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 15.01px;
+        color: var(--title-color);
+        border: 0;
+        background-color: var(--main-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5.76px;
+        height: 40px;
+        width: 92px;
+        transition: opacity 0.2s;
+        .plus {
+          font-size: 30px;
+          margin-bottom: 10px;
+          font-weight: 300;
+          margin-left: 6px;
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .buttons {
+    button {
+      font-size: 15.37px;
+      font-weight: 700;
+      line-height: 22.59px;
+      border-radius: 5.76px;
+      padding: 10px 19.21px;
+      border: none;
+      transition: opacity 0.2s;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .save {
+      color: white;
+      background-color: #ff3ba6;
+      margin-left: 1rem;
+    }
+
+    .delete {
+      background-color: #feeded;
+      color: #f70505;
+    }
+  }
 }
