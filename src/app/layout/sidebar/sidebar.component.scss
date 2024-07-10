@@ -58,14 +58,13 @@
 
 .sidenav-nav {
   list-style: none;
-  padding: 1rem;
+  padding: 0 1rem;
   margin: 0;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  cursor: pointer;
-
+  height: calc(100% - 7rem);
   .sidenav-nav-item {
     width: 100%;
     margin-bottom: 0.625rem;
@@ -106,6 +105,17 @@
           transition: color 0.5s ease;
         }
       }
+    }
+  }
+  .log-out {
+    margin-top: auto;
+    cursor: pointer;
+    i,
+    .sidenav-link-text {
+      color: var(--title-color) !important;
+    }
+    i {
+      transform: rotate(180deg);
     }
   }
 }

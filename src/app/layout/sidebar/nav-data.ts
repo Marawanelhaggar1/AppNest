@@ -6,7 +6,7 @@ export const navData = [
   },
   {
     routerLink: 'subjects',
-    icon: 'fa-solid fa-house',
+    icon: 'fa-regular fa-file-lines',
     label: 'المواد الدراسية',
   },
 ];
