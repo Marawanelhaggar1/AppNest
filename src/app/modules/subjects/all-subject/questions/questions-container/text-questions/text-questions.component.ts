@@ -29,8 +29,10 @@ export class TextQuestionsComponent {
         const questions = JSON.parse(localStorage.getItem('questions')!);
         questions.push(draftData);
         localStorage.setItem('questions', JSON.stringify(questions));
+        this._snack.open('question Saved', 'X', { duration: 3000 });
       } else {
         localStorage.setItem('questions', JSON.stringify([draftData]));
+        this._snack.open('question Saved', 'X', { duration: 3000 });
       }
     } else {
       this._snack.open('enter valid questions', 'X', { duration: 3000 });
