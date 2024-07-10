@@ -1,13 +1,1 @@
-.question {
-  background-color: #f4f4f4;
-  border-radius: 14px;
-  padding: 1rem;
-  margin: 1rem 0;
-
-  .title {
-    font-size: 16.45px;
-    font-weight: 700;
-    line-height: 24.18px;
-    color: #092434;
-  }
-}
+@import url(../single-choice-questions/single-choice-questions.component.scss);
