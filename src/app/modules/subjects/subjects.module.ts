@@ -13,6 +13,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MultipleQuestionsComponent } from './all-subject/questions/questions-container/multiple-questions/multiple-questions.component';
 import { SingleChoiceQuestionsComponent } from './all-subject/questions/questions-container/single-choice-questions/single-choice-questions.component';
 import { TextQuestionsComponent } from './all-subject/questions/questions-container/text-questions/text-questions.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,8 @@ import { TextQuestionsComponent } from './all-subject/questions/questions-contai
     SubjectsRoutingModule,
     AngularMatModule,
     DragDropModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
 })
 export class SubjectsModule {}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-multiple-questions',
@@ -8,9 +9,17 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class MultipleQuestionsComponent {
   questionForm: FormGroup;
-  constructor(private _formBuilder: FormBuilder) {
+  constructor(private _formBuilder: FormBuilder, private _snack: MatSnackBar) {
     this.questionForm = this._formBuilder.group({
       question: ['', [Validators.required]],
     });
+  }
+
+  onSubmit() {
+    if (this.questionForm.valid) {
+      console.log(this.questionForm.value);
+    } else {
+      this._snack.open('enter valid questions', 'X', { duration: 3000 });
+    }
   }
 }

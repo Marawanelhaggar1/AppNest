@@ -1,10 +1,10 @@
 <div class="question">
-  <form>
+  <form [formGroup]="questionForm" (ngSubmit)="onSubmit()">
     <h2 class="title">سؤال نصي</h2>
     <div class="row">
-      <div class="col-12 mb-3">
+      <div class="col-12 mb-2">
         <mat-form-field
-          class="example-full-width mb-3 w-100"
+          class="example-full-width mb-1 w-100"
           appearance="outline"
         >
           <mat-label>نص السؤال,,, </mat-label>
@@ -14,6 +14,24 @@
           </mat-error>
         </mat-form-field>
       </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mb-1">
+        <mat-form-field
+          class="example-full-width mb-3 w-100"
+          appearance="outline"
+        >
+          <mat-label>اجابه السؤال,,, </mat-label>
+          <textarea matInput formControlName="answer" required></textarea>
+          <mat-error *ngIf="questionForm.get('answer')?.hasError('required')">
+            اجابه السؤال مطلوب,,,
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="save" type="submit">حفظ كمسودة</button>
+      <button class="delete" type="button">الغاء</button>
     </div>
   </form>
 </div>

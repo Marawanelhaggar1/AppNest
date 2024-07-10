@@ -10,4 +10,30 @@
     line-height: 24.18px;
     color: #092434;
   }
+
+  .buttons {
+    button {
+      font-size: 15.37px;
+      font-weight: 700;
+      line-height: 22.59px;
+      border-radius: 5.76px;
+      padding: 10px 19.21px;
+      border: none;
+      transition: opacity 0.2s;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .save {
+      color: white;
+      background-color: #ff3ba6;
+      margin-left: 1rem;
+    }
+
+    .delete {
+      background-color: #feeded;
+      color: #f70505;
+    }
+  }
 }
