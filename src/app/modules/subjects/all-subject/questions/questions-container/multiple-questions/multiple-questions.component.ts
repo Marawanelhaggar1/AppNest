@@ -41,7 +41,7 @@ export class MultipleQuestionsComponent {
       console.log(this.questionForm.value);
       const draftData = {
         ...this.questionForm.value,
-        type: 'اختيار فردي',
+        type: 'اختيار متعدد',
         status: 'draft',
       };
       console.log('Draft Saved:', draftData);

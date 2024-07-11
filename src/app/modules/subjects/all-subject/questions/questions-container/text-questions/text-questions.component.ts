@@ -13,6 +13,7 @@ export class TextQuestionsComponent {
     this.questionForm = this._formBuilder.group({
       question: ['', [Validators.required]],
       answer: ['', [Validators.required]],
+      difficulty: ['', [Validators.required]],
     });
   }
 

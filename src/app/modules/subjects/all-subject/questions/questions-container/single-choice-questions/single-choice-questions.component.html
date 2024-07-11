@@ -36,7 +36,7 @@
       *ngFor="let choice of choices.controls; let i = index"
     >
       <div [formGroupName]="i" class="row mt-3 mb-3">
-        <div class="col-9">
+        <div class="col-lg-9 col-xl-9 col-sm-8 col-md-8">
           <mat-form-field class="example-full-width w-75" appearance="outline">
             <mat-label>الاختيار {{ i + 1 }}</mat-label>
             <input matInput formControlName="text" required />
@@ -45,7 +45,7 @@
             >
           </mat-form-field>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-xl-3 col-sm-4 col-md-4">
           <mat-radio-group formControlName="isCorrect">
             <mat-radio-button [value]="true"
               >تحديد كاجابة صحيحة</mat-radio-button
