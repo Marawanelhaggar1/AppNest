@@ -36,6 +36,93 @@
       align-items: center;
       margin-left: 2rem;
       gap: 10px;
+
+      &:hover {
+        .dropdown {
+          display: block !important;
+        }
+      }
+
+      .dropdown {
+        background-color: white;
+        display: none;
+        border-radius: 12px;
+        padding: 20px 25px;
+        position: absolute;
+        top: 50px;
+        width: 250px;
+        left: 0;
+        z-index: 100000000;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        hr {
+          opacity: 0.25;
+          color: #111113;
+          margin: 25px 0;
+        }
+
+        .user-details {
+          width: 100%;
+          display: flex;
+          gap: 20px;
+
+          .image {
+            width: 64px;
+            height: 64px;
+            font-size: 24px;
+            margin-left: 0;
+          }
+          img {
+            width: 64px;
+            height: 64px;
+            margin-left: 0;
+          }
+          .detail {
+            .detail-name {
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 19.5px;
+              color: #111113;
+            }
+
+            .online {
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 17.07px;
+              color: #659711;
+            }
+          }
+        }
+
+        .account {
+          a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            .button-name {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              gap: 5px;
+              img {
+                width: 18px;
+                height: 18px;
+              }
+              p {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 17.64px;
+                margin-bottom: 0;
+                color: #111113;
+              }
+            }
+            i {
+              font-size: 14px;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
       .image {
         cursor: pointer;
         border-radius: 50%;
